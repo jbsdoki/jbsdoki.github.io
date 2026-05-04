@@ -57,8 +57,8 @@ navbar_fixed: true
 footer_fixed: true
 search_enabled: true
 socials_in_search: true
-posts_in_search: true
-bib_search: true
+posts_in_search: false # true: include blog posts in the site search palette
+bib_search: false # true: include bibliography in the site search palette
 
 # Dimensions
 max_width: 930px
