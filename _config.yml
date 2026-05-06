@@ -3,7 +3,7 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Joseph  
+first_name: Joseph
 middle_name: G
 last_name: Berry
 contact_note: >
@@ -670,4 +670,3 @@ jsonresume:
   - languages
   - interests
   - references
-
