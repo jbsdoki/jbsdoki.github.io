@@ -6,8 +6,8 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [
-  {%- for page in site.pages -%}
-    {%- if page.permalink == '/' -%}{%- assign about_title = page.title | strip -%}{%- endif -%}
+  {%- for nav_src_page in site.pages -%}
+    {%- if nav_src_page.permalink == '/' -%}{%- assign about_title = nav_src_page.title | strip -%}{%- endif -%}
   {%- endfor -%}
   {
     id: "nav-{{ about_title | slugify }}",
