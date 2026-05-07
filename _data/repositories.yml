@@ -1,6 +1,8 @@
 github_users:
   - jbsdoki
+  - BerkeleyExpertSystemTechnologiesLab
 
 repo_description_lines_max: 2
 
-github_repos: []
+github_repos:
+  - jbsdoki/eds-data-explorer
