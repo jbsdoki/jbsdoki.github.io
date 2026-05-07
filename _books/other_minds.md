@@ -5,6 +5,8 @@ author: Peter Godfrey Smith
 cover: assets/img/book_covers/Other_Minds_cover.jpg
 categories: science philosophy
 date: 2026-05-07
+started: 2026-04-23
+finished: 2026-05-07
 released: 2016
 status: Finished
 ---
