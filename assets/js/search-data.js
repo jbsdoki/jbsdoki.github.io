@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-repositories",
           title: "repositories",
-          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
@@ -37,12 +37,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/books/";
           },
-        },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "books-other-minds-the-octopus-the-sea-and-the-deep-origins-of-consciousness",
+        },{id: "books-other-minds-the-octopus-the-sea-and-the-deep-origins-of-consciousness",
           title: 'Other Minds - The Octopus, The Sea, and The Deep Origins of Consciousness...',
           description: "",
           section: "Books",handler: () => {
