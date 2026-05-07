@@ -2,64 +2,16 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
-horizontal: false
+description: A curated list of my featured GitHub projects.
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
+<p>Below are two featured projects from my GitHub portfolio:</p>
 
-{% else %}
+<ul>
+  <li><a href="https://github.com/jbsdoki/ML_Market_Prediction" target="_blank" rel="noopener">ML Market Prediction</a></li>
+  <li><a href="https://github.com/jbsdoki/Google_agentic_AI_experiment" target="_blank" rel="noopener">Google Agentic AI Experiment</a></li>
+</ul>
 
-<!-- Display projects without categories -->
-
-{% assign sorted_projects = site.projects | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
-</div>
+<p>For more projects, visit <a href="https://github.com/jbsdoki" target="_blank" rel="noopener">github.com/jbsdoki</a>.</p>
