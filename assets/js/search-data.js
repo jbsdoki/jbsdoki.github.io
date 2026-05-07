@@ -37,7 +37,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/books/";
           },
-        },{id: "books-the-godfather",
+        },{id: "books-other-minds-the-octopus-the-sea-and-the-deep-origins-of-consciousness",
+          title: 'Other Minds - The Octopus, The Sea, and The Deep Origins of Consciousness...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/other_minds/";
+            },},{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
           section: "Books",handler: () => {
