@@ -2,22 +2,20 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Developer and ML Engineer
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Berkeley, California</p>
 
 selected_papers: false # set true to show selected publications on the home page again
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
@@ -27,8 +25,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am currently pursuing an M.S. in Electrical Engineering at the University of Washington, Seattle, with a background in Electrical Engineering and Computer Science from UC Berkeley. My academic interests blend machine learning, computer security, operating systems, and large-scale data systems, with coursework spanning deep learning, ML fundamentals, and systems architecture.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My experience ranges from research and engineering roles to military systems administration. I have built end-to-end ML pipelines for methane leak detection, designed data portals for electron microscopy research, and led secure infrastructure projects for DoD environments. I also served as a Marine Corps platoon sergeant, where I balanced personnel leadership with mission-critical network and server operations.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Today I focus on AI agents, multi-modal architectures, and cloud-native engineering using tools like PyTorch, Docker, GCP, FastAPI, and React. I enjoy turning complex technical requirements into practical, production-ready systems that bridge hardware, software, and user workflows.
+
+Outside of work and study, I stay curious about AI agent collaboration, large-scale data pipelines, and secure distributed systems. I also spend time exploring communities where technology and real-world impact intersect.
