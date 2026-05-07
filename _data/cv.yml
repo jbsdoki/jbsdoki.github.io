@@ -1,6 +1,6 @@
 cv:
   name: Joseph G. Berry
-  label: Electrical Engineer & AI Researcher
+  label: Electrical Engineer & ML Researcher
   email: joseph.g.berry@gmail.com
   location: Seattle, WA
   image: ""
@@ -49,7 +49,7 @@ cv:
     Experience:
       - company: Squishy Robotics
         position: Undergraduate Researcher
-        location: ""
+        location: UC Berkeley, CA
         start_date: 2025-09
         end_date: 2026-02
         summary: Designed and built a large-scale data annotation pipeline for methane leak detection using synthetic hyperspectral images.
@@ -71,7 +71,7 @@ cv:
 
       - company: O'Prueba - Taiwanese Edge Computing Startup
         position: Intern
-        location: ""
+        location: Berkeley, CA and Taipei, Taiwan
         start_date: 2023-08
         end_date: 2024-05
         summary: Conducted technology and market research on U.S. enterprise edge computing.
@@ -81,7 +81,7 @@ cv:
 
       - company: SAIC - Naval Information Warfare Center, Pacific
         position: Sr. Systems Administrator
-        location: ""
+        location: San Diego, CA
         start_date: 2019-02
         end_date: 2021-04
         summary: Architected secure laboratory replicating Naval infrastructure.
@@ -92,7 +92,7 @@ cv:
 
       - company: United States Marine Corps
         position: Data Systems Administrator
-        location: ""
+        location: Okinawa, Japan and San Diego, CA
         start_date: 2014-07
         end_date: 2019-02
         summary: Served as Platoon Sergeant managing network infrastructure for 500+ users.
@@ -140,7 +140,7 @@ cv:
         icon: fa-solid fa-brain
         keywords: "PyTorch, CNNs, ViTs, multi-modal architectures, OpenCV, large-scale data pipelines"
       - name: Platform & Infrastructure
-        level: Advanced
+        level: Intermediate
         icon: fa-solid fa-server
         keywords: "Docker, GCP (Cloud Run, Cloud Build), Linux, CI/CD pipelines, Git, FastAPI, React"
       - name: AI Agents & LLMs
@@ -180,6 +180,3 @@ cv:
     #     icon: fa-solid fa-laptop
     #     reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
 
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
