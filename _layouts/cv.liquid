@@ -94,17 +94,25 @@ layout: default
                   <td class="p-1 pr-2 font-weight-bold"><b>Location</b></td>
                   <td class="p-1 pl-2 font-weight-light">
                     {% capture location_parts %}{% endcapture %}
-                    {% if cv.address.street %}{% capture location_parts %}{{ location_parts }}{{ cv.address.street }}{% endcapture %}{% endif %}
+                    {% if cv.address.street %}
+                      {% capture location_parts %}{{ location_parts }}{{ cv.address.street }}{% endcapture %}
+                    {% endif %}
                     {% if cv.address.city %}
-                      {% if location_parts != '' %}{% capture location_parts %}{{ location_parts }}, {% endcapture %}{% endif %}
+                      {% if location_parts != '' %}
+                        {% capture location_parts %}{{ location_parts }}, {% endcapture %}
+                      {% endif %}
                       {% capture location_parts %}{{ location_parts }}{{ cv.address.city }}{% endcapture %}
                     {% endif %}
                     {% if cv.address.region %}
-                      {% if location_parts != '' %}{% capture location_parts %}{{ location_parts }}, {% endcapture %}{% endif %}
+                      {% if location_parts != '' %}
+                        {% capture location_parts %}{{ location_parts }}, {% endcapture %}
+                      {% endif %}
                       {% capture location_parts %}{{ location_parts }}{{ cv.address.region }}{% endcapture %}
                     {% endif %}
                     {% if cv.address.postalCode %}
-                      {% if location_parts != '' %}{% capture location_parts %}{{ location_parts }}, {% endcapture %}{% endif %}
+                      {% if location_parts != '' %}
+                        {% capture location_parts %}{{ location_parts }}, {% endcapture %}
+                      {% endif %}
                       {% capture location_parts %}{{ location_parts }}{{ cv.address.postalCode }}{% endcapture %}
                     {% endif %}
                     {{ location_parts }}
@@ -245,17 +253,25 @@ layout: default
                   <td class="p-1 pr-2 font-weight-bold"><b>Location</b></td>
                   <td class="p-1 pl-2 font-weight-light">
                     {% capture location_parts %}{% endcapture %}
-                    {% if basics.location.address %}{% capture location_parts %}{{ location_parts }}{{ basics.location.address }}{% endcapture %}{% endif %}
+                    {% if basics.location.address %}
+                      {% capture location_parts %}{{ location_parts }}{{ basics.location.address }}{% endcapture %}
+                    {% endif %}
                     {% if basics.location.city %}
-                      {% if location_parts != '' %}{% capture location_parts %}{{ location_parts }}, {% endcapture %}{% endif %}
+                      {% if location_parts != '' %}
+                        {% capture location_parts %}{{ location_parts }}, {% endcapture %}
+                      {% endif %}
                       {% capture location_parts %}{{ location_parts }}{{ basics.location.city }}{% endcapture %}
                     {% endif %}
                     {% if basics.location.region %}
-                      {% if location_parts != '' %}{% capture location_parts %}{{ location_parts }}, {% endcapture %}{% endif %}
+                      {% if location_parts != '' %}
+                        {% capture location_parts %}{{ location_parts }}, {% endcapture %}
+                      {% endif %}
                       {% capture location_parts %}{{ location_parts }}{{ basics.location.region }}{% endcapture %}
                     {% endif %}
                     {% if basics.location.postalCode %}
-                      {% if location_parts != '' %}{% capture location_parts %}{{ location_parts }}, {% endcapture %}{% endif %}
+                      {% if location_parts != '' %}
+                        {% capture location_parts %}{{ location_parts }}, {% endcapture %}
+                      {% endif %}
                       {% capture location_parts %}{{ location_parts }}{{ basics.location.postalCode }}{% endcapture %}
                     {% endif %}
                     {{ location_parts }}
