@@ -71,7 +71,7 @@ cv:
 
       - company: O'Prueba - Taiwanese Edge Computing Startup
         position: Intern
-        location: Berkeley, CA and Taipei, Taiwan
+        location: Berkeley, CA
         start_date: 2023-08
         end_date: 2024-05
         summary: Conducted technology and market research on U.S. enterprise edge computing.
@@ -92,7 +92,7 @@ cv:
 
       - company: United States Marine Corps
         position: Data Systems Administrator
-        location: Okinawa, Japan and San Diego, CA
+        location: San Diego, CA
         start_date: 2014-07
         end_date: 2019-02
         summary: Served as Platoon Sergeant managing network infrastructure for 500+ users.
