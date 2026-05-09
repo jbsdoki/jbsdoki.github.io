@@ -113,7 +113,7 @@ ninja.data = [{
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/assets/pdf/_Joseph_Berry_Resume.pdf", "_blank");
+          window.open("/assets/pdf/Joseph_Berry_Resume.pdf", "_blank");
         },
       },{
         id: 'social-email',
