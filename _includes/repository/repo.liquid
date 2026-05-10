@@ -31,48 +31,115 @@
   {% assign max_lines = 2 %}
 {% endif %}
 
+{% capture github_repo_url %}https://github.com/{{ include.repository }}{% endcapture %}
+{% assign has_org_text = false %}
+{% if include.organization_summary %}
+  {% assign has_org_text = true %}
+{% endif %}
+{% if include.contribution_summary %}
+  {% assign has_org_text = true %}
+{% endif %}
+
 <div class="repo p-2">
-  {% if include.organization_summary %}
-    <p class="text-start mb-3 organization-repo-desc">{{ include.organization_summary }}</p>
-  {% endif %}
-  {% if include.contribution_summary %}
-    <p class="text-start mb-3 organization-repo-desc">{{ include.contribution_summary }}</p>
-  {% endif %}
-  <div class="text-center">
-    <a
-      href="https://github.com/{{ include.repository }}"
-      class="d-block text-decoration-none repo-card-link"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="View {{ include.repository }} on GitHub"
-    >
-      {% if include.logo %}
-        <div class="mb-3 d-flex justify-content-center align-items-center" style="min-height: 4rem">
-          <img
-            src="{{ include.logo | relative_url }}"
-            alt=""
-            class="img-fluid"
-            style="max-height: 5.5rem; width: auto; object-fit: contain"
-            width="200"
-            height="88"
-            loading="lazy"
-            decoding="async"
-            aria-hidden="true"
+  {% if has_org_text %}
+    <div class="row align-items-start g-4">
+      <div class="col-12 col-lg-8">
+        {% if include.organization_summary %}
+          <p class="text-start mb-3 organization-repo-desc">{{ include.organization_summary }}</p>
+        {% endif %}
+        {% if include.contribution_summary %}
+          <p class="text-start mb-0 organization-repo-desc">{{ include.contribution_summary }}</p>
+        {% endif %}
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="ms-lg-auto text-center" style="max-width: 420px">
+          <a
+            href="{{ github_repo_url }}"
+            class="d-block text-decoration-none repo-card-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View {{ include.repository }} on GitHub"
           >
+            {% if include.logo %}
+              <div class="mb-3 d-flex justify-content-center align-items-center" style="min-height: 4rem">
+                <img
+                  src="{{ include.logo | relative_url }}"
+                  alt=""
+                  class="img-fluid"
+                  style="max-height: 5.5rem; width: auto; object-fit: contain"
+                  width="200"
+                  height="88"
+                  loading="lazy"
+                  decoding="async"
+                  aria-hidden="true"
+                >
+              </div>
+            {% endif %}
+            <img
+              class="only-light w-100 rounded"
+              alt=""
+              aria-hidden="true"
+              src="{{ site.external_services.github_readme_stats_url }}/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_light }}&locale={{ lang }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
+            >
+            <img
+              class="only-dark w-100 rounded"
+              alt=""
+              aria-hidden="true"
+              src="{{ site.external_services.github_readme_stats_url }}/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_dark }}&locale={{ lang }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
+            >
+          </a>
+          <p class="mb-0 mt-3">
+            <a href="{{ github_repo_url }}" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+              <span class="ms-1">{{ include.repository }}</span>
+            </a>
+          </p>
         </div>
-      {% endif %}
-      <img
-        class="only-light w-100"
-        alt=""
-        aria-hidden="true"
-        src="{{ site.external_services.github_readme_stats_url }}/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_light }}&locale={{ lang }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
+      </div>
+    </div>
+  {% else %}
+    <div class="text-center">
+      <a
+        href="{{ github_repo_url }}"
+        class="d-block text-decoration-none repo-card-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="View {{ include.repository }} on GitHub"
       >
-      <img
-        class="only-dark w-100"
-        alt=""
-        aria-hidden="true"
-        src="{{ site.external_services.github_readme_stats_url }}/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_dark }}&locale={{ lang }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
-      >
-    </a>
-  </div>
+        {% if include.logo %}
+          <div class="mb-3 d-flex justify-content-center align-items-center" style="min-height: 4rem">
+            <img
+              src="{{ include.logo | relative_url }}"
+              alt=""
+              class="img-fluid"
+              style="max-height: 5.5rem; width: auto; object-fit: contain"
+              width="200"
+              height="88"
+              loading="lazy"
+              decoding="async"
+              aria-hidden="true"
+            >
+          </div>
+        {% endif %}
+        <img
+          class="only-light w-100"
+          alt=""
+          aria-hidden="true"
+          src="{{ site.external_services.github_readme_stats_url }}/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_light }}&locale={{ lang }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
+        >
+        <img
+          class="only-dark w-100"
+          alt=""
+          aria-hidden="true"
+          src="{{ site.external_services.github_readme_stats_url }}/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_dark }}&locale={{ lang }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
+        >
+      </a>
+      <p class="mb-0 mt-3">
+        <a href="{{ github_repo_url }}" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+          <span class="ms-1">{{ include.repository }}</span>
+        </a>
+      </p>
+    </div>
+  {% endif %}
 </div>

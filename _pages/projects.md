@@ -32,9 +32,6 @@ _styles: |
   }
 ---
 
-{% assign stats_base = site.external_services.github_readme_stats_url %}
-{% assign loc = site.lang | split: '-' | first %}
-
 <p class="mb-3">
   Selected work from my GitHub. For more repositories, see
   <a href="{{ '/repositories/' | relative_url }}">repositories</a> or
@@ -69,20 +66,10 @@ _styles: |
       on past performance, future performance outlook, and current valuations and market data.
     </p>
     <p class="mb-3"><strong>Skills:</strong> Google Agent Development Kit (ADK), Gemini, Python, web scraping, Yahoo Finance / yfinance</p>
-    <a href="https://github.com/jbsdoki/Google_agentic_AI_experiment" target="_blank" rel="noopener noreferrer" class="d-block">
-      <img
-        class="only-light w-100 rounded z-depth-1"
-        alt="GitHub repository card: Google_agentic_AI_experiment"
-        src="{{ stats_base }}/api/pin/?username=jbsdoki&repo=Google_agentic_AI_experiment&theme={{ site.repo_theme_light }}&locale={{ loc }}&show_owner=false&description_lines_count=3"
-      >
-      <img
-        class="only-dark w-100 rounded z-depth-1"
-        alt="GitHub repository card: Google_agentic_AI_experiment"
-        src="{{ stats_base }}/api/pin/?username=jbsdoki&repo=Google_agentic_AI_experiment&theme={{ site.repo_theme_dark }}&locale={{ loc }}&show_owner=false&description_lines_count=3"
-      >
-    </a>
-    <p class="mt-2 mb-0">
-      <a href="https://github.com/jbsdoki/Google_agentic_AI_experiment" target="_blank" rel="noopener noreferrer">jbsdoki/Google_agentic_AI_experiment</a>
+    <p class="mb-0">
+      <a href="https://github.com/jbsdoki/Google_agentic_AI_experiment" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github" aria-hidden="true"></i> jbsdoki/Google_agentic_AI_experiment
+      </a>
     </p>
   </article>
 
@@ -98,20 +85,10 @@ _styles: |
       workflows for time-series forecasting.
     </p>
     <p class="mb-3"><strong>Skills:</strong> TensorFlow, Keras, LSTM, Pandas, Python</p>
-    <a href="https://github.com/jbsdoki/ML_Market_Prediction" target="_blank" rel="noopener noreferrer" class="d-block">
-      <img
-        class="only-light w-100 rounded z-depth-1"
-        alt="GitHub repository card: ML_Market_Prediction"
-        src="{{ stats_base }}/api/pin/?username=jbsdoki&repo=ML_Market_Prediction&theme={{ site.repo_theme_light }}&locale={{ loc }}&show_owner=false&description_lines_count=3"
-      >
-      <img
-        class="only-dark w-100 rounded z-depth-1"
-        alt="GitHub repository card: ML_Market_Prediction"
-        src="{{ stats_base }}/api/pin/?username=jbsdoki&repo=ML_Market_Prediction&theme={{ site.repo_theme_dark }}&locale={{ loc }}&show_owner=false&description_lines_count=3"
-      >
-    </a>
-    <p class="mt-2 mb-0">
-      <a href="https://github.com/jbsdoki/ML_Market_Prediction" target="_blank" rel="noopener noreferrer">jbsdoki/ML_Market_Prediction</a>
+    <p class="mb-0">
+      <a href="https://github.com/jbsdoki/ML_Market_Prediction" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github" aria-hidden="true"></i> jbsdoki/ML_Market_Prediction
+      </a>
     </p>
   </article>
 
