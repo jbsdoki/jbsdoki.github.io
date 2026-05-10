@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-projects",
           title: "projects",
-          description: "A curated list of my featured GitHub projects.",
+          description: "Featured personal projects—AI agents for investment research and LSTM-based market modeling.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
