@@ -32,29 +32,38 @@
 {% endif %}
 
 <div class="repo p-2 text-center">
-  {% if include.logo %}
-    <div class="mb-3 d-flex justify-content-center align-items-center" style="min-height: 4rem">
-      <img
-        src="{{ include.logo | relative_url }}"
-        alt="{% if include.logo_alt %}{{ include.logo_alt }}{% else %}Organization logo{% endif %}"
-        class="img-fluid"
-        style="max-height: 5.5rem; width: auto; object-fit: contain"
-        width="200"
-        height="88"
-        loading="lazy"
-        decoding="async"
-      >
-    </div>
-  {% endif %}
-  <a href="https://github.com/{{ include.repository }}">
+  <a
+    href="https://github.com/{{ include.repository }}"
+    class="d-block text-decoration-none repo-card-link"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="View {{ include.repository }} on GitHub"
+  >
+    {% if include.logo %}
+      <div class="mb-3 d-flex justify-content-center align-items-center" style="min-height: 4rem">
+        <img
+          src="{{ include.logo | relative_url }}"
+          alt=""
+          class="img-fluid"
+          style="max-height: 5.5rem; width: auto; object-fit: contain"
+          width="200"
+          height="88"
+          loading="lazy"
+          decoding="async"
+          aria-hidden="true"
+        >
+      </div>
+    {% endif %}
     <img
       class="only-light w-100"
-      alt="{{ include.repository }}"
+      alt=""
+      aria-hidden="true"
       src="{{ site.external_services.github_readme_stats_url }}/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_light }}&locale={{ lang }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
     >
     <img
       class="only-dark w-100"
-      alt="{{ include.repository }}"
+      alt=""
+      aria-hidden="true"
       src="{{ site.external_services.github_readme_stats_url }}/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_dark }}&locale={{ lang }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
     >
   </a>
