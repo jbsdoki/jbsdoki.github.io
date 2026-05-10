@@ -33,46 +33,46 @@
 
 <div class="repo p-2">
   {% if include.organization_summary %}
-    <p class="text-start small text-muted mb-2">{{ include.organization_summary }}</p>
+    <p class="text-start mb-3 organization-repo-desc">{{ include.organization_summary }}</p>
   {% endif %}
   {% if include.contribution_summary %}
-    <p class="text-start mb-3">{{ include.contribution_summary }}</p>
+    <p class="text-start mb-3 organization-repo-desc">{{ include.contribution_summary }}</p>
   {% endif %}
   <div class="text-center">
-  <a
-    href="https://github.com/{{ include.repository }}"
-    class="d-block text-decoration-none repo-card-link"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="View {{ include.repository }} on GitHub"
-  >
-    {% if include.logo %}
-      <div class="mb-3 d-flex justify-content-center align-items-center" style="min-height: 4rem">
-        <img
-          src="{{ include.logo | relative_url }}"
-          alt=""
-          class="img-fluid"
-          style="max-height: 5.5rem; width: auto; object-fit: contain"
-          width="200"
-          height="88"
-          loading="lazy"
-          decoding="async"
-          aria-hidden="true"
-        >
-      </div>
-    {% endif %}
-    <img
-      class="only-light w-100"
-      alt=""
-      aria-hidden="true"
-      src="{{ site.external_services.github_readme_stats_url }}/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_light }}&locale={{ lang }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
+    <a
+      href="https://github.com/{{ include.repository }}"
+      class="d-block text-decoration-none repo-card-link"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="View {{ include.repository }} on GitHub"
     >
-    <img
-      class="only-dark w-100"
-      alt=""
-      aria-hidden="true"
-      src="{{ site.external_services.github_readme_stats_url }}/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_dark }}&locale={{ lang }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
-    >
-  </a>
+      {% if include.logo %}
+        <div class="mb-3 d-flex justify-content-center align-items-center" style="min-height: 4rem">
+          <img
+            src="{{ include.logo | relative_url }}"
+            alt=""
+            class="img-fluid"
+            style="max-height: 5.5rem; width: auto; object-fit: contain"
+            width="200"
+            height="88"
+            loading="lazy"
+            decoding="async"
+            aria-hidden="true"
+          >
+        </div>
+      {% endif %}
+      <img
+        class="only-light w-100"
+        alt=""
+        aria-hidden="true"
+        src="{{ site.external_services.github_readme_stats_url }}/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_light }}&locale={{ lang }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
+      >
+      <img
+        class="only-dark w-100"
+        alt=""
+        aria-hidden="true"
+        src="{{ site.external_services.github_readme_stats_url }}/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_dark }}&locale={{ lang }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
+      >
+    </a>
   </div>
 </div>

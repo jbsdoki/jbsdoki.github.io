@@ -6,30 +6,28 @@ repo_description_lines_max: 2
 github_repos_personal: []
 
 github_repos_organizations:
-  - repository: BerkeleyExpertSystemTechnologiesLab/Squishy-Methane-Analysis
+  - organization_name: Squishy Robotics
+    repository: BerkeleyExpertSystemTechnologiesLab/Squishy-Methane-Analysis
     logo: assets/img/BEST_Lab.png
     logo_alt: "Berkeley Expert System Technologies Lab (BEST Lab) logo"
-    organization_summary:
-      Squishy Robotics grew out of UC Berkeley and NASA work on survivable planetary probes; today it commercializes
+    organization_summary: Squishy Robotics grew out of UC Berkeley and NASA work on survivable planetary probes; today it commercializes
       drop-resilient tensegrity robots that can be air-deployed with customizable sensors and mesh networking to stream
       real-time ground data from hazardous environments for disaster response, industry, and defense.
-    contribution_summary:
-      Sep 2025–Feb 2026, undergraduate researcher with the Berkeley Expert System Technologies Lab on Squishy Robotics
+    contribution_summary: Sep 2025–Feb 2026, undergraduate researcher with the Berkeley Expert System Technologies Lab on Squishy Robotics
       methane sensing. I built a large-scale synthetic labeling pipeline (~100,000 hyperspectral training images) that
       connected raw robot sensor output to ML-ready datasets across hardware and ML teams. I trained and benchmarked
       CNN and vision-transformer architectures adapted from recent methane-quantification literature, evaluating them
       against deployment constraints, diagnosing failure modes, and iterating on data quality and model design for
       measurable gains.
 
-  - repository: MolecularFoundry/eds-data-explorer
+  - organization_name: Molecular Foundry
+    repository: MolecularFoundry/eds-data-explorer
     logo: assets/img/molecular_foundry.png
     logo_alt: "Molecular Foundry logo"
-    organization_summary:
-      The Molecular Foundry is a Department of Energy nanoscience user facility at Lawrence Berkeley National
+    organization_summary: The Molecular Foundry is a Department of Energy nanoscience user facility at Lawrence Berkeley National
       Laboratory; the National Center for Electron Microscopy within it provides aberration-corrected electron
       microscopes and deep expertise for atomic-resolution imaging and advanced characterization workflows.
-    contribution_summary:
-      Jun–Aug 2025, research intern working with electron-microscopy scientists and the Crucible scientific data / ML
+    contribution_summary: Jun–Aug 2025, research intern working with electron-microscopy scientists and the Crucible scientific data / ML
       platform. I led user research to map analysis workflows and gaps, then translated findings into concrete product
       requirements. I designed and shipped a full-stack Data Portal (React, FastAPI, Docker on GCP Cloud Run) so
       researchers could upload, query, and explore electron microscopy datasets through a single web interface.
