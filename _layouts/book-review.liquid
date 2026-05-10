@@ -134,7 +134,7 @@ layout: default
         <h4>{{ status }}</h4>
       </div>
     {% else %}
-      <figure>
+      <figure class="book-review-cover-figure">
         {% if page.cover %}
           <img alt="{{ page.title }} cover" src="{{ site.baseurl }}/{{ page.cover }}">
           <figcaption>
@@ -167,75 +167,77 @@ layout: default
 </div>
 
 <style>
-      figure {
+      .book-review-cover-figure {
         float: none;
         width: auto;
+        max-width: 280px;
         display: block;
         margin-right: auto;
         margin-left: auto;
-
+        padding: 0;
       }
-      figure  > img {
 
-           vertical-align: top;
-           display: block;
-           margin-right: 0px;
-           margin-left: 0px;
-           padding: 0px;
-
+      .book-review-cover-figure > img {
+        vertical-align: top;
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
       }
-      figure figcaption {
 
+      .book-review-cover-figure figcaption {
         display: block;
         caption-side: bottom;
         text-align: center;
       }
 
-      @media screen and (min-width: 600px)  {
-
-        .empty-review{
+      @media screen and (min-width: 600px) {
+        .empty-review {
           float: left;
-          display: block; /* in-line block; */
-          margin: 0px 0px 0px 0px;  /* adjust as needed */
-          padding: 0px 0px 0px 20px;
-         /* top right bottom left */
-          }
+          display: block;
+          margin: 0;
+          padding: 0 0 0 20px;
+        }
 
-         .empty-review-caption {
-                  caption-side: left;
-                  text-align: left;
+        .empty-review-caption {
+          caption-side: left;
+          text-align: left;
+        }
 
+        .empty-review-cover {
+          width: 250px;
+          vertical-align: top;
+          padding-right: 40px;
+        }
 
-                  }
+        .book-review-cover-figure {
+          float: right;
+          clear: right;
+          display: block;
+          width: auto;
+          max-width: min(260px, 36vw);
+          margin: 0 0 1rem 2rem;
+          margin-left: clamp(1.5rem, 4vw, 2.75rem);
+          margin-right: 0;
+          padding: 0;
+        }
 
-          .empty-review-cover {
-              width:250px;
-              vertical-align: top;
-              padding-right: 40px;
-              }
+        .book-review-cover-figure img {
+          width: 100%;
+          max-width: 260px;
+          height: auto;
+          vertical-align: top;
+        }
 
-          figure {
+        .book-review-cover-figure figcaption {
+          caption-side: bottom;
+          text-align: center;
+        }
 
-                float: right;
-                display: in-line block; /* in-line block; */
-                margin: 0px 0px 0px 0px;  /* adjust as needed */
-                padding: 0px 0px 0px 20px;
-               /* top right bottom left */
-              }
-
-          figure img {
-                  width:300px;
-                  vertical-align: top;
-
-                }
-
-          figure figcaption {
-                  caption-side: bottom;
-                  text-align: left;
-
-                  }
-
-          .mobile-break { display: none; }
+        .mobile-break {
+          display: none;
+        }
 
   /* =Blockquote
   -------------------------------------------------------------- */
@@ -262,4 +264,5 @@ layout: default
       right: 0;
 
   }
+      }
 </style>
