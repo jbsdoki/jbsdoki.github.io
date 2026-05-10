@@ -115,9 +115,10 @@ _styles: |
     </p>
   </article>
 
-  {% comment %}
-    Add future projects by copying an <article class="project-card" id="project-..."> block above the first
-    project (newest-first) or below the last (oldest-last). Give each a unique id and add a matching "Jump to" link
-    in the paragraph after the intro.
-  {% endcomment %}
+{% comment %}
+Add future projects by copying an <article class="project-card" id="project-..."> block above the first
+project (newest-first) or below the last (oldest-last). Give each a unique id and add a matching "Jump to" link
+in the paragraph after the intro.
+{% endcomment %}
+
 </div>
