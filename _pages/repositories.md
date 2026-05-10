@@ -63,10 +63,17 @@ description: GitHub profile, personal repositories, and organization projects I 
 ## Organizations I contribute to
 
 {% if site.data.repositories.github_repos_organizations.size > 0 %}
-
-  <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  <div class="row">
     {% for entry in site.data.repositories.github_repos_organizations %}
-      {% include repository/repo.liquid repository=entry.repository logo=entry.logo logo_alt=entry.logo_alt %}
+      <div class="col-12 mb-5">
+        {% include repository/repo.liquid
+          repository=entry.repository
+          logo=entry.logo
+          logo_alt=entry.logo_alt
+          organization_summary=entry.organization_summary
+          contribution_summary=entry.contribution_summary
+        %}
+      </div>
     {% endfor %}
   </div>
 {% else %}
