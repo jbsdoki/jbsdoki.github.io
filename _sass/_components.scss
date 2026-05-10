@@ -167,6 +167,11 @@ ul.task-list input[type="checkbox"] {
   .repo {
     max-width: 50%;
   }
+
+  // Full-width repo blocks (org sections with text + side media) must not inherit 50% cap
+  .organization-repo-subsection .repo {
+    max-width: 100%;
+  }
 }
 
 // Social (bottom)
