@@ -6,6 +6,7 @@ nav: true
 nav_order: 6
 collection: books
 ---
+
 > A person who won't read has no advantage over one who can't read.
 > -- Mark Twain
 
