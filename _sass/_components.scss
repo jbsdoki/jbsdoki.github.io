@@ -174,6 +174,34 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Repositories page: org logo above pin card only (not readme-stats pin images)
+.organization-repo-logo-img {
+  width: auto;
+  max-width: 100%;
+  max-height: 9.5rem;
+  object-fit: contain;
+}
+
+// Long owner/repo names must wrap inside narrow repo column (flex min-width)
+.organization-repo-row > [class*="col-"] {
+  min-width: 0;
+}
+
+.organization-repo-visual {
+  min-width: 0;
+}
+
+.repo-github-label-wrap {
+  max-width: 100%;
+}
+
+.repo-github-label {
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 // Social (bottom)
 
 .social {

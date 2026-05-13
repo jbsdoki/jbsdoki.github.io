@@ -60,7 +60,7 @@ description: GitHub profile, personal repositories, and organization projects I 
 
 ---
 
-## Organizations I contribute to
+## Organizations I've contributed to
 
 {% if site.data.repositories.github_repos_organizations.size > 0 %}
 
