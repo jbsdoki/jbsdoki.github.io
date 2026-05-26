@@ -1,6 +1,6 @@
 ---
 layout: book-review
-title: Chip War: The Fight for the World's Most Critical Technology
+title: Chip War - The Fight for the World's Most Critical Technology
 author: Chris Miller
 cover: assets/img/book_covers/chip_war.jpg
 categories: technology society

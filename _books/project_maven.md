@@ -1,6 +1,6 @@
 ---
 layout: book-review
-title: Project Maven: A Marine Colonel, His Team, and the Dawn of AI Warfare
+title: Project Maven - A Marine Colonel, His Team, and the Dawn of AI Warfare
 author: Katrina Manson 
 cover: assets/img/book_covers/project_maven.jpg
 categories: military technology warfare
