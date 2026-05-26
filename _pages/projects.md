@@ -74,7 +74,7 @@ _styles: |
   </article>
 
   <article id="project-lstm" class="project-card mb-0">
-    <h2 class="h3 mt-0">LSTM machine learning model for stock prediction</h2>
+    <h2 class="h3 mt-0">LSTM RNN machine learning model for stock prediction</h2>
     <p class="text-muted mb-2">Jan 2025 – Feb 2025 · Personal project</p>
     <p>
       A <strong>TensorFlow Keras LSTM</strong> model trained on historical market data: given a window of
