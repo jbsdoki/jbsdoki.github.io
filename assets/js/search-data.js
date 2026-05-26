@@ -37,21 +37,21 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/books/";
           },
-        },{id: "books-",
-          title: '',
+        },{id: "books-chip-war-the-fight-for-the-world-39-s-most-critical-technology",
+          title: 'Chip War - The Fight for the World&amp;#39;s Most Critical Technology',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/chip_war/";
+            },},{id: "books-project-maven-a-marine-colonel-his-team-and-the-dawn-of-ai-warfare",
+          title: 'Project Maven - A Marine Colonel, His Team, and the Dawn of AI...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/project_maven/";
             },},{id: "books-other-minds-the-octopus-the-sea-and-the-deep-origins-of-consciousness",
           title: 'Other Minds - The Octopus, The Sea, and The Deep Origins of Consciousness...',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/other_minds/";
-            },},{id: "books-",
-          title: '',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/project_maven/";
             },},{id: "books-the-technological-republic-hard-power-soft-belief-and-the-future-of-the-west",
           title: 'The Technological Republic - Hard Power, Soft Belief, and the Future of the...',
           description: "",
