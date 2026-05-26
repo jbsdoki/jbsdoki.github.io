@@ -37,11 +37,26 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/books/";
           },
-        },{id: "books-other-minds-the-octopus-the-sea-and-the-deep-origins-of-consciousness",
+        },{id: "books-",
+          title: '',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/chip_war/";
+            },},{id: "books-other-minds-the-octopus-the-sea-and-the-deep-origins-of-consciousness",
           title: 'Other Minds - The Octopus, The Sea, and The Deep Origins of Consciousness...',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/other_minds/";
+            },},{id: "books-",
+          title: '',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/project_maven/";
+            },},{id: "books-the-technological-republic-hard-power-soft-belief-and-the-future-of-the-west",
+          title: 'The Technological Republic - Hard Power, Soft Belief, and the Future of the...',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_technological_republic/";
             },},{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",
