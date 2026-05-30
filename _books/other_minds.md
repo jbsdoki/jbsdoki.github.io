@@ -3,7 +3,7 @@ layout: book-review
 title: Other Minds - The Octopus, The Sea, and The Deep Origins of Consciousness
 author: Peter Godfrey Smith
 cover: assets/img/book_covers/Other_Minds_cover.jpg
-categories: science philosophy
+categories: science philosophy biology
 date: 2026-05-07
 started: 2026-04-23
 finished: 2026-05-07
