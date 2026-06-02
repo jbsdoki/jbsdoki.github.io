@@ -164,19 +164,19 @@ cv:
       - name: Cisco Certified Network Associate Routing and Switching (CCNA)
         date: 2017-03-01
         issuer: Cisco
-        url: https://your-credly-or-cisco-verify-link
+        url: https://www.cisco.com/
         icon: fa-solid fa-network-wired
 
       - name: CySA+
         date: 2018-05-01
         issuer: CompTIA
-        url: https://www.comptia.org/...
+        url: https://www.comptia.org/
         icon: fa-solid fa-shield-halved
 
       - name: Security+
         date: 2016-09-01
         issuer: CompTIA
-        url: https://www.comptia.org/...
+        url: https://www.comptia.org/
         icon: fa-solid fa-shield-halved
 
     Projects:
