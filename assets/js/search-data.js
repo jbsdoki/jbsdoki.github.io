@@ -62,6 +62,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/on_the_edge/";
+            },},{id: "books-breakneck-china-39-s-quest-to-engineer-the-future",
+          title: 'Breakneck - China&amp;#39;s Quest to Engineer the Future',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/breakneck/";
             },},{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",
