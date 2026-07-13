@@ -101,16 +101,25 @@ cv:
           - Built and managed mission-critical systems
           - Balanced leadership and technical operations
 
-    # Volunteer:
-    #   - company: People's Climate March
-    #     position: Lead Organizer
-    #     location: Zurich, Switzerland
-    #     start_date: 2014-04-01
-    #     end_date: 2015-07-01
-    #     summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
-    #     highlights:
-    #       - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-    #       - "Men of the year 2014 by Time magazine"
+    Volunteer:
+      - company: USO
+        position: Team Lead
+        location: Camp Hansen, Okinawa, Japan
+        start_date: 2015
+        end_date: 2017
+        summary: Opened and closed the USO and organized events for Marines and their families.
+        highlights:
+          - Organized and hosted events for Marines and their families
+          - Managed a team of 10+ volunteers
+      
+      - company: Emmeryville Citizens Assistance Program
+        position: Team Lead
+        location: Emmeryville, CA
+        start_date: 2021
+        end_date: 2022
+        summary: Distributed food and supplies to the homeless community of the East Bay.
+        highlights:
+          - Distributed food to homeless individuals across Emmeryville, Oakland, and Berkeley
 
     # Awards:
     #   - title: Nobel Prize in Physics
