@@ -57,6 +57,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_technological_republic/";
+            },},{id: "books-on-the-edge-the-art-of-risking-everything",
+          title: 'On The Edge - The Art of Risking Everything',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/on_the_edge/";
             },},{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",
