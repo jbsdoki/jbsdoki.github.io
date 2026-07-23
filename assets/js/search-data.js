@@ -67,6 +67,16 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/breakneck/";
+            },},{id: "books-1177-b-c-the-year-civilization-collapsed",
+          title: '1177 B.C. - The Year Civilization Collapsed',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/1177_bc/";
+            },},{id: "books-a-brief-history-of-intelligence",
+          title: 'A Brief History Of Intelligence',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/a_brief_history_of_intelligence/";
             },},{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",
