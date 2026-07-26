@@ -72,6 +72,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/1177_bc/";
+            },},{id: "books-abundance",
+          title: 'Abundance',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/abundance/";
             },},{id: "books-a-brief-history-of-intelligence",
           title: 'A Brief History Of Intelligence',
           description: "",
