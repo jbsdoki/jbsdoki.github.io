@@ -7,12 +7,7 @@
   --about-accent-soft: rgba(15, 110, 124, 0.12);
   --about-hero-fg: var(--global-text-color);
   --about-hero-muted: var(--global-text-color-light);
-  --about-hero-surface: linear-gradient(
-    145deg,
-    rgba(15, 110, 124, 0.1) 0%,
-    rgba(15, 110, 124, 0.03) 42%,
-    transparent 78%
-  );
+  --about-hero-surface: linear-gradient(145deg, rgba(15, 110, 124, 0.1) 0%, rgba(15, 110, 124, 0.03) 42%, transparent 78%);
   --about-hero-name-font: "Newsreader", "Source Serif 4", Georgia, "Times New Roman", serif;
   --about-hero-body-font: "Source Sans 3", "Source Sans Pro", system-ui, sans-serif;
 }
@@ -20,12 +15,7 @@
 html[data-theme="dark"] .about-page {
   --about-accent: #3aa8b5;
   --about-accent-soft: rgba(58, 168, 181, 0.18);
-  --about-hero-surface: linear-gradient(
-    145deg,
-    rgba(58, 168, 181, 0.16) 0%,
-    rgba(58, 168, 181, 0.05) 45%,
-    transparent 80%
-  );
+  --about-hero-surface: linear-gradient(145deg, rgba(58, 168, 181, 0.16) 0%, rgba(58, 168, 181, 0.05) 45%, transparent 80%);
 }
 
 .about-hero {
