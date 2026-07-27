@@ -18,7 +18,7 @@ layout: default
 
     <div class="about-hero__inner">
       <div class="about-hero__copy">
-        <h1 class="about-hero__name">
+        <h1 class="about-hero__name" data-about-enter>
           {% if site.title == 'blank' %}
             <span class="about-hero__firstname">{{ site.first_name }}</span>
             {{ site.middle_name }}
@@ -29,14 +29,14 @@ layout: default
         </h1>
 
         {% if page.subtitle %}
-          <p class="about-hero__subtitle">{{ page.subtitle }}</p>
+          <p class="about-hero__subtitle" data-about-enter>{{ page.subtitle }}</p>
         {% endif %}
 
         {% if page.profile and page.profile.more_info %}
-          <div class="about-hero__meta">{{ page.profile.more_info }}</div>
+          <div class="about-hero__meta" data-about-enter>{{ page.profile.more_info }}</div>
         {% endif %}
 
-        <div class="about-hero__ctas">
+        <div class="about-hero__ctas" data-about-enter>
           {% if site.data.socials.cv_pdf %}
             <a
               class="about-hero__cta about-hero__cta--primary"
@@ -74,7 +74,7 @@ layout: default
       </div>
 
       {% if page.profile and page.profile.image %}
-        <div class="about-hero__photo">
+        <div class="about-hero__photo" data-about-enter>
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% assign profile_image_class = 'img-fluid' %}
           {% capture sizes %}(min-width: {{ site.max_width }}) 320px, (min-width: 768px) 30vw, 80vw{% endcapture %}
@@ -90,7 +90,7 @@ layout: default
   <article class="about-body">
     <div class="about-bio clearfix">{{ content }}</div>
 
-    <section class="about-focus" aria-labelledby="about-focus-title">
+    <section class="about-focus" aria-labelledby="about-focus-title" data-about-reveal>
       <h2 id="about-focus-title" class="about-focus__title">Focus</h2>
       <ul class="about-focus__list">
         <li class="about-focus__item">
@@ -138,7 +138,7 @@ layout: default
 
     <!-- Social -->
     {% if page.social %}
-      <div class="social">
+      <div class="social" data-about-reveal>
         <div class="contact-icons">{% social_links %}</div>
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>

@@ -2,14 +2,14 @@
 layout: about
 title: about
 permalink: /
-subtitle: Developer, Researcher, and Machine Learning Engineer
+subtitle: Developer, researcher, and machine learning engineer
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Berkeley, California</p>
+    <p>Seattle, Washington</p>
 
 selected_papers: false # set true to show selected publications on the home page again
 social: true # includes social icons at the bottom of the page
@@ -25,10 +25,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am currently pursuing an M.S. in Electrical Engineering at the University of Washington, Seattle, with a Bachelor's in Electrical Engineering and Computer Science from UC Berkeley. My academic interests blend machine learning, computer security, operating systems, and large-scale data systems, with coursework spanning deep learning, ML fundamentals, and systems architecture.
+I am pursuing an M.S. in Electrical Engineering at the University of Washington, with a B.S. in Electrical Engineering and Computer Science from UC Berkeley. My interests sit at the intersection of machine learning, computer security, operating systems, and large-scale data systems.
 
-My experiences range from academic research and engineering roles to military systems administration. I served in the USMC as a Systems Administrator and left with the rank of Sergeant. I worked at the Naval Information Warfare Center - Pacific (NIWC-PAC) before leaving to pursue my Bachelor's in EECS at UC Berkeley. My work at Berkeley includes an internship at Lawrence Berkeley National Lab where I created a data portal and tool for electron microscopy analysis and as a researcher for Squishy Robotics, training ML models on a multi-modal dataset of methan leaking oil and gas equipment.
+My background spans academic research, engineering roles, and military systems administration. I served in the USMC as a Systems Administrator and left as a Sergeant, then worked at the Naval Information Warfare Center Pacific (NIWC-PAC) before Berkeley. At Berkeley I built a data portal for electron microscopy analysis at Lawrence Berkeley National Lab and trained multimodal models at Squishy Robotics on methane-leaking oil and gas equipment.
 
-Today I focus on AI agents, multi-modal architectures, and cloud-native engineering using tools like PyTorch, Docker, GCP, FastAPI, and React. I enjoy turning complex technical requirements into practical, production-ready systems that bridge hardware, software, and user workflows.
+Today I focus on AI agents, multimodal architectures, and cloud-native engineering with tools like PyTorch, Docker, GCP, FastAPI, and React — turning complex requirements into production-ready systems that bridge hardware, software, and user workflows.
 
-Outside of work and study, I stay curious about AI agent collaboration, large-scale data pipelines, and secure distributed systems. I read about breakthroughs in ML and speculation about where the industry is heading.
+Outside of work and study, I read about ML breakthroughs and where agent collaboration, data pipelines, and secure distributed systems are headed next.

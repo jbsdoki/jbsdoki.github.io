@@ -376,3 +376,7 @@
 {% if site.newsletter.enabled %}
   <script defer src="{{ '/assets/js/newsletter.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}
+
+{% if page.layout == 'about' %}
+  <script defer src="{{ '/assets/js/about-hero.js' | relative_url | bust_file_cache }}"></script>
+{% endif %}

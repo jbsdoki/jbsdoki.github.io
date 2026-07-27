@@ -271,3 +271,57 @@ html[data-theme="dark"] .about-page {
 .about-page .social {
   margin-top: 0.5rem;
 }
+
+/*******************************************************************************
+ * Motion (enabled by about-hero.js via .about-page--enhanced)
+ ******************************************************************************/
+
+@media (prefers-reduced-motion: no-preference) {
+  .about-page--enhanced [data-about-enter],
+  .about-page--enhanced [data-about-reveal] {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition:
+      opacity 0.7s ease,
+      transform 0.7s ease;
+    will-change: opacity, transform;
+  }
+
+  .about-page--enhanced [data-about-enter].is-visible,
+  .about-page--enhanced [data-about-reveal].is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  .about-page--enhanced .about-hero__mesh {
+    animation: about-mesh-drift 28s ease-in-out infinite alternate;
+  }
+
+  .about-page--enhanced .about-hero__glow--one {
+    animation: about-glow-drift 18s ease-in-out infinite alternate;
+  }
+
+  .about-page--enhanced .about-hero__glow--two {
+    animation: about-glow-drift 22s ease-in-out infinite alternate-reverse;
+  }
+}
+
+@keyframes about-mesh-drift {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  to {
+    transform: translate3d(-2.5%, 1.5%, 0) scale(1.05);
+  }
+}
+
+@keyframes about-glow-drift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(4%, -3%, 0);
+  }
+}
