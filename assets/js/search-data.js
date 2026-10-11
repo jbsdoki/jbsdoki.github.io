@@ -72,6 +72,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/1177_bc/";
+            },},{id: "books-freedom-39-s-forge",
+          title: 'Freedom&amp;#39;s Forge',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/freedoms_forge/";
             },},{id: "books-abundance",
           title: 'Abundance',
           description: "",
